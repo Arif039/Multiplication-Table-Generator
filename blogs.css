@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    /* color: #ffff; */
+}
+body {
+    font-family: Ubuntu;
+    min-height: 100vh;
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    margin: 0;
+    padding: 0;
+    
+}
+
+#wrapper {
+    width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 500px;
+}
+
+
+/* ----------------Header and footer-------------------- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 8vh;
+    
+    background-color: #8c53e7;
+    
+    font-weight: 500;
+}
+
+#home a {
+    color: #ffff;
+    text-decoration: none;
+    
+}
+
+#home a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+#Blogs a {
+    color: #ffff;
+    text-decoration: none;
+    
+}
+
+#Blogs a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+
+#footer {
+    border: 1px solid transparent;
+    justify-items: center;
+    color: #ffff;
+    background-color: black;
+    margin: 0;
+    
+}
+
+/* -----------Table--------- */
+table, thead,tr, th {
+    border: 1px solid black;
+}
+
+tbody, tr, td {
+    border: 1px solid black;
+}
+
+
+/* --------------------------- */
+
+#blogs_head {
+    color: #ffff;
+}
+
+h3 {
+    color: #ffff;
+}
+
+button {
+    padding: 10px;
+    width: 10rem;
+    background-color: blueviolet;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px #0000006e;
+    color: #fff;
+    
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+button:active {
+  background-color: #006AE8;
+}
+
+button:hover {
+  background-color: #1C84FF;
+}
+
+/* ---------------answer -1 ----------- */
+
+
+#Ans_1 {
+    margin-top: 20px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(201, 186, 176);
+   
+}
+
+/* ---------------Answer-2------------- */
+
+#Ans_2 {
+    margin-top: 20px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(201, 186, 176);
+}
+
+/* ----------------Answer-3------------ */
+
+#Ans_3 {
+    margin-top: 20px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(201, 186, 176);
+    width: 35vw;
+}

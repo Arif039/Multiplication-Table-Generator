@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my Blogs</title>
+    <link rel="stylesheet" href="blogs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+
+        <div id="header">
+            <nav>
+               <div id="home"><a href="index.html">Home</a></div>
+               <div id="Blogs"><a href="">Blogs</a></div>
+            </nav>
+        </div>
+
+        <div id="wrapper">
+
+            
+    
+            <div id="heading">
+                <h1 id="blogs_head">JavaScript Questions</h1>
+            </div>
+    
+        <div id="container">
+            <!-- -------------------------Question and Answer - 1------------------------------------- -->
+             <div id="wraper_1 ">
+                <div id="q_1">
+                    <h3>1. What is the difference between let, const, and var in JavaScript?</h3>
+                    <button id="q_1_button" onclick="answerOne()">Answer</button>
+                </div>
+    
+                <div id="Ans_1" style="display: none;">
+                    <table id="A_1_table">
+                        <thead>
+                            <th>Var</th>
+                            <th>Let</th>
+                            <th>Const</th>
+                        </thead>
+    
+                        <tbody id="A_1_tbody">
+    
+                            <tr>
+                                <td>Function-scoped</td>
+                                <td>Block-scoped</td>
+                                <td>Block-scoped</td>
+                              </tr>
+    
+                              <tr>
+                                <td>The variable is accessible within the function it's declared in, or globally if declared outside any function.</td>
+                                <td>The variable is only accessible within the block of code(Ex:inside an if statement, a loop, or a function).</td>
+                                <td>The variable is only accessible within the block of code(Ex:inside an if statement, a loop, or a function).</td>
+                              </tr>
+    
+                              <tr>
+                                <td>Can be reassigned and redeclared within its scope.</td>
+                                <td>Can be reassigned, but not redeclared within its scop.</td>
+                                <td>Cannot be reassigned or redeclared. It must be initialized when declared.</td>
+                              </tr>
+    
+                              <tr>
+                                <td> <b>var</b> has a confusing scoping behavior and can lead to unexpected results. It's better to use <b>let</b> and <b>const</b> instead.</td>
+                                <td>If you need to reassign a variable, use <b>let</b>.</td>
+                                <td>If a variable's value doesn't need to change, use <b>const</b>. This improves code readability and helps prevent accidental reassignments.</td>
+                              </tr>
+    
+                        </tbody>
+    
+                    </table>
+                </div> 
+             </div>    
+                
+    
+                <!-- -------------------------Question and Answer - 2------------------------------------- -->
+                <div id="wrapper_2">
+                    <div id="q_2">
+                        <h3>2. What is the difference between find(), filter() method?</h3>
+                        <button onclick="answerTwo()">Answer</button>
+                    </div>
+    
+                    <div id="Ans_2" style="display: none;">
+                        <table id="A_2_table">
+                            <thead>
+                                <th>find() Method.</th>
+                                <th>filter() Method.</th>
+                            </thead>
+        
+                            <tbody id="A_2_tbody">
+                                <tr>
+                                    <td>It return the first element in the array that satisfies the provided testing function. If no element matches, it returns <b>undefined.</b></td>
+                                    <td>It returns a new array containing all the elements that satisfy the provided testing function. If no elements match, it returns an empty array.</td>
+                                    
+                                </tr>
+    
+                                <tr>
+                                    <td>It is very useful when you need to locate a single element in an array.</td>
+                                    <td>Useful when you need to extract multiple elements from an array based on certain conditions.</td>
+                                    
+                                </tr>
+    
+                                <tr>
+                                    <td>Ex: <br>
+                                        const <span style="color: rgb(230, 7, 7);">numbers</span> = <span style="color: rgb(39, 192, 103);">[1, 2, 3, 4, 5]</span>; <br>
+                                        const <span style="color: rgb(230, 7, 7);">foundNumber</span> = <span style="color: rgb(79, 56, 206);">numbers.find</span> <span style="color: rgb(39, 192, 103);">(num => num > 2)</span>; <br>
+                                        console.log <span style="color: rgb(230, 7, 7);">(foundNumber)</span>; // Output: 3</td>
+    
+                                    <td>Ex: <br>
+                                        const <span style="color: rgb(230, 7, 7);">numbers</span> = <span style="color: rgb(39, 192, 103);">[1, 2, 3, 4, 5]</span>; <br>
+                                        const <span <span style="color: rgb(230, 7, 7);">filteredNumbers</span> = <span style="color: rgb(43, 46, 204);">numbers.filter</span> <span style="color: rgb(39, 192, 103);">(num => num > 2)</span>; <br>
+                                        console.log <span style="color: rgb(230, 7, 7);">(filteredNumbers)</span>; // Output: [3, 4, 5]
+                                    </td>
+                                    
+                                </tr>
+                                
+                            </tbody>
+        
+                        </table>
+                    </div>
+                </div>
+    
+                <div id="wraper_3">
+    
+                    <div id="q_3">
+                        <h3>3. How do you select an element in the DOM using JavaScript? Name a few methods</h3>
+                        <button onclick="answerThree()">Answer</button>
+                    </div>
+    
+                    <div id="Ans_3" style="display: none;">
+                        <table id="A_3_table">
+                            <thead>
+                                <th>SL</th>
+                                <th>DOM Elements</th>
+                                <th>Ex:</th>
+                            </thead>
+    
+                            <tbody id="A_3_tbody">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Using getElementById</td>
+                                    <td>document.getElementById(id)</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>2</td>
+                                    <td>Using getElementsByClassName</td>
+                                    <td>document.getElementsByClassName(className)</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>3</td>
+                                    <td>Using getElementsByTagName</td>
+                                    <td>document.getElementsByTagName(tagName)</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>4</td>
+                                    <td>Using querySelector</td>
+                                    <td>document.querySelector(selector)</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>5</td>
+                                    <td>Using querySelectorAll</td>
+                                    <td>document.querySelectorAll(selector)</td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+                    </div>
+    
+                </div>
+                
+    
+            </div>
+    
+            
+
+        </div>
+
+        <div id="footer">
+            <h3>Copyright &copy; Multiplication Table Generator. All Right Reserved</h3>
+        </div>
+        
+
+    </section>
+
+    <script src="blogs.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    font-family: Ubuntu;
+    min-height: 100vh;
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    margin: 0;
+    padding: 0;
+}
+ 
+section {
+    margin-bottom: 597px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 8vh;
+    
+    background-color: #8c53e7;
+    
+    font-weight: 500;
+}
+
+#home a {
+    color: #ffff;
+    text-decoration: none;
+    
+}
+
+#home a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+#Blogs a {
+    color: #ffff;
+    text-decoration: none;
+    
+}
+
+#Blogs a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+.inner_section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-self: center;
+    align-items: center;
+    background-color: #ffff;
+    /* height: 20vh; */
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+input {
+    width: 50%;
+    height: 3.4vh;
+    border-radius: 5px;
+    
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    border: 1px solid #00000069;
+}
+
+input :focus,
+input :valid {
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+
+button {
+    padding: 10px;
+    width: 10rem;
+    background-color: blueviolet;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px #0000006e;
+    color: #fff;
+    
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+button:active {
+  background-color: #006AE8;
+}
+
+button:hover {
+  background-color: #1C84FF;
+}
+
+
+#line {
+    height: 3px;
+    border: 0 none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    background-color: rgb(113, 17, 209);
+    width: 22rem;
+}
+
+th {
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+
+td {
+    background-color: rgb(225 235 235 / 72%);
+    padding: 10px;
+    width: 17rem;
+    display: block;
+    box-shadow: 2px 2px 2px rgb(216, 206, 226);
+    border-radius: 10px;
+   
+    font-weight: 500;
+}
+
+#footer {
+    border: 1px solid transparent;
+    justify-items: center;
+    color: #ffff;
+    background-color: black;
+    margin: 0;
+}
